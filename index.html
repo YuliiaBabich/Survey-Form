@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title"> Survey Form </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Yuliia Babich"
+                    required minlength="4" maxlength="8" size="10"> </label>
+            <label id="email-label" for="email">Email
+                <input id="email" name="email" type="email" required placeholder="aim2002@ukr.net">
+            </label>
+            <label for="number" id="number-label" type="text">Age
+                (optional)
+                <input id="number" name="number" type="number" placeholder="Age" required min="6" max="15">
+            </label>
+            <label for="dropdown">Where are you from?
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Ukraine</option>
+                    <option value="2">USA</option>
+                    <option value="3">Germany</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="gender"><input id="femail-gender" type="radio" name="gender" class="inline" checked
+                    value="r1" />
+                Female</label>
+            <label for="mail-gender"><input id="gender" type="radio" name="gender" class="inline" value="r2" />
+                Male</label>
+            <label for="dropdown-job">Your qualifications
+                <select id="dropdown-job" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Full stack developer
+                    <option value="2">Web-desainer
+                    <option value="3">Data analyst
+                </select>
+            </label>
+            <label for="skills">Choose your tech skills:
+                <br><input class="inline" id="skills" type="checkbox" required name="skills" value="skills" /> HTML
+            </label>
+            <input class="inline" id="skills" type="checkbox" required name="skills" value="skills" /> CSS
+            </label>
+            <input class="inline" id="skills" type="checkbox" required name="skills" value="skills" /> JS
+            </label>
+            <input class="inline" id="skills" type="checkbox" required name="skills" value="skills" /> Pyton
+            </label>
+            <label for="comment">Any comments or suggestions?
+                <textarea id="comment" name="bio" rows="3" cols="30"
+                    placeholder="I like coding on the beach..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"
+                value="terms" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and
+                conditions</a>
+        </label>
+        <input id="submit" type="submit" value="submit" />
+    </form>
+</body>
+
+</html>
